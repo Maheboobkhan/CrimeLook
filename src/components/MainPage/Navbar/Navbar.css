@@ -436,8 +436,8 @@
     .active {
       transition: 0.5s all ease-in-out;
       /* display: block; */
-      width: 64%;
-      min-height: 90vh;
+      width: 72%;
+      min-height: 80vh;
       visibility: visible;
     }
   

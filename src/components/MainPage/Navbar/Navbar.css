@@ -391,8 +391,9 @@
       flex-direction: column; /* Stack items vertically */
       align-items: center;
        /* Ensure it stays on top */
-       line-height: 50px;
+       line-height: 60px;
        /* border: 1px solid red; */
+
     }
 
     .ribbon-text-1{
@@ -431,6 +432,8 @@
       font-size: 15px;
       font-family: 'Roboto', sans-serif;
       font-weight: 100;
+      width: 200px;
+      /* border: 1px solid red; */
     }
   
     .active {

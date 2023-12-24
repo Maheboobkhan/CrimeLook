@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.footer-main{
+    background-color: rgba(38,38,38,255);
+    padding: 30px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content{
+    width: fit-content;
+}
+
+.footer-content ul span{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.footer-content ul{
+    list-style: none;
+    /* line-height: 25px; */
+    left: 0;
+}
+
+.footer-content ul a li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.footer-content ul a{
+    text-decoration: none;
+}
+
+.footer-content ul a li:hover{
+    color: #fbe122;
+    width: fit-content;
+}
+
+.socialmedia-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialmedia{
+    width: 14%;
+}
+
+.footer-content ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.copyright-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright-container div{
+    color: #fff;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.copyright-container div a{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.copyright-container div a:hover{
+    color: #fbe122;
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.banner-container{
+    display: flex;
+    background-image: linear-gradient(#111, #653a3a);
+    /* margin-top: 20px; */
+}
+.banner-image{
+    background: url('https://media.istockphoto.com/id/1355632593/photo/super-close-up-on-female-eye-software-engineer-working-on-computer-programming-reflecting-in.jpg?s=612x612&w=0&k=20&c=KoqBO9C9EGH1Ztph0iaemZ5Nhf41D7YdkBii4fDWjp8=');
+    width: 65%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 15px 39px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: -5 5px 10px #fff;
+    /* border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%; */
+    border-bottom-left-radius: 40%;
+}
+
+.banner-box{
+  width: 35%;
+  height: 500px;
+  background-color: #fbe122;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: inset 0px 15px 39px 5px rgba(0,0,0,0.75);
+  border-top-right-radius: 60%;
+}
+
+.banner-box h1{
+  font-family: 'Teko', sans-serif;
+    font-size: 45px;
+    color: #161509;
+    font-weight: 400;
+}
+
+.banner-box p{
+  font-family: 'Montserrat', sans-serif;
+  color: #161509;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.banner-box .para-1{
+  margin-top: 50px;
+}

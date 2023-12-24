@@ -383,7 +383,8 @@
 
     .navbar-list-container{
       position: absolute;
-      top: 30px; /* Adjust according to your design */
+      top: 29px;
+      /* bottom: -365px; */
       right: -30px;
       width: 0;
       visibility: hidden;
@@ -417,7 +418,10 @@
     }
 
     .navbar-container{
+      position: relative;
       width: 100%;
+      z-index: 999;
+      overflow: visible;
     }
 
     .hamburger-menu div {

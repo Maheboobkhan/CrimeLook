@@ -15,3 +15,17 @@
 .gallery-container img:hover{
     transform: scale(1.1);
 }
+
+@media (max-width:768px){
+    .gallery-container img{
+        width: 32%;
+    }
+}
+
+@media (max-width:480px){
+    .gallery-container img{
+        width: 85%;
+        margin: auto;
+        margin-top: 40px;
+    }
+}

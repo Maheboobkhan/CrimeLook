@@ -82,7 +82,7 @@ const Navbar = () => {
       <div className={`navbar-list-container ${isActive ? 'active' : ''}`}>
         <ul className="navbar-list">
           <Link style={{textDecoration: 'none'}} to='/'><li>Main Page</li></Link>
-          <Link style={{textDecoration: 'none'}} to='/about us'><li>About Us</li></Link>
+          <Link style={{textDecoration: 'none'}} to='/about'><li>About Us</li></Link>
           <Link style={{textDecoration: 'none'}} to='/gallery'><li>Gallery</li></Link>
           <Link style={{textDecoration: 'none'}} to='/contact'><li>Contact</li></Link>
           <Link style={{textDecoration: 'none'}} to='/davp/rni'><li>DAVP/RNI</li></Link>

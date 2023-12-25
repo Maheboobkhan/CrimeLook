@@ -91,4 +91,15 @@
     top: 0;
     left: 0;
   }
+
+@media (max-width: 480px){
+  .news-heading{
+    width: 70%;
+  }
+
+  .youtube-video{
+    width: 80%;
+    height: 200px;
+  }
+}
   

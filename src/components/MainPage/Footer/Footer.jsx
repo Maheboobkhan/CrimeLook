@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
           </ul>
         </div>
-        <div className="footer-content">
+        <div className="footer-content important-link">
           <ul>
             <span>important links</span>
             <a>
@@ -45,24 +45,24 @@ const Footer = () => {
             <div className="socialmedia-icon">
               <a href="">
                 <li>
-                  <CiFacebook size={35} />
+                  <CiFacebook className='footer-icons' size={35} />
                 </li>
               </a>
               <a>
                 <li>
-                  <CiLinkedin size={35} />
+                  <CiLinkedin className='footer-icons' size={35} />
                 </li>
               </a>
               <a>
                 <li>
-                  <CiTwitter size={35} />
+                  <CiTwitter className='footer-icons' size={35} />
                 </li>
               </a>
             </div>
           </ul>
         </div>
 
-        <div className="footer-content">
+        <div className="footer-content privacy">
           <ul>
             <span>Privacy Policy</span>
             <li>

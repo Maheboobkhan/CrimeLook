@@ -10,7 +10,7 @@ const AdvertisementCard = () => {
         AOS.init({duration: 1000})
     },[])
   return (
-    <div className="advertisement-card" data-aos="fade-up-left"
+    <div className="advertisement-card" data-aos="fade-left"
     data-aos-anchor-placement="center-center">
       <h2>Advertisement</h2>
       <img src={Advertisement} />

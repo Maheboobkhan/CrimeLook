@@ -187,6 +187,7 @@
   @media (max-width: 600px){
     .headline-container{
       flex-direction: column;
+      margin-top: 50px;
     }
     .headline{
       width: 100%;

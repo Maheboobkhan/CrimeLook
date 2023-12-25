@@ -12,7 +12,7 @@
 }
 
 .footer-content{
-    width: fit-content;
+    width: 30%;
 }
 
 .footer-content ul span{
@@ -47,11 +47,16 @@
 
 .socialmedia-icon{
     display: flex;
-    justify-content: space-between;
 }
 
-.socialmedia{
-    width: 14%;
+.footer-icons{
+    
+}
+
+.socialmedia-icon{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-content ul li{
@@ -82,4 +87,32 @@
 
 .copyright-container div a:hover{
     color: #fbe122;
+}
+
+@media (max-width: 660px){
+    .footer-content{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .socialmedia-icon{
+        width: 60%;
+    }
+
+    .footer-content ul span{
+        font-size: 18px;
+    }
+
+    .copyright-container div a{
+        font-size: 14px;
+    }
+
+    .copyright-container{
+        width: 100%;
+    }
+
+    .copyright-container div{
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -162,3 +162,47 @@
   .advertisement-card button:hover {
     background-color: #0056b3;
   } */
+
+  @media (max-width: 600px){
+    .headline{
+      width: 80%;
+    }
+
+    .advertisement-card{
+      width: 10%;
+      height: 55%;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      border: 1px solid #161509;
+      margin-top: 20%;
+    }
+
+    .advertisement-card img{
+      width: 200px;
+      border: 1px solid red;
+      padding: 20px;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: 800px){
+    .advertisement-card{
+      width: 50%;
+    }
+  }
+
+
+  @media (max-width: 1050px){
+    .advertisement-card img{
+      height: 55%;
+      width: 70%;
+    }
+
+    .headline-heading h1{
+      left: 60%;
+    }
+
+    .headline-heading{
+      width: 80%;
+    }
+  }

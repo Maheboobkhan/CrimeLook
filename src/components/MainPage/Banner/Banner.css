@@ -48,3 +48,27 @@
 .banner-box .para-1{
   margin-top: 50px;
 }
+
+@media (max-width: 480px){
+  .banner-container{
+    flex-direction: column;
+    margin-top: -30px;
+  }
+
+  .banner-image{
+    width: 100%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    background-position:left;
+    height: 300px;
+    /* border-radius: 50%; */
+  }
+
+  .banner-box{
+    width: 100%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 300px;
+    text-align: center;
+  }
+}

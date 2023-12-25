@@ -38,31 +38,31 @@ export default function Carousel() {
         }}
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Nature 1" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Nature 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Nature 6" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Nature 6" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Nature 7" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Nature 7" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Nature 8" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Nature 8" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Nature 9" />
+          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Nature 9" />
         </SwiperSlide>
       </Swiper>
     </>

@@ -11,9 +11,9 @@ const Banner = () => {
 
   return (
     <div className='banner-container' data-aos="zoom-in">
-        <div className='banner-image'></div>
-        <div className='banner-box' data-aos='zoom-out-left'>
-          <h1>Crime Look</h1>
+        <div className='banner-image' data-aos='flip-left'></div>
+        <div className='banner-box'>
+          <h1 data-aos='zoom-in'>Crime Look</h1>
           <p className='para-1'>Published from Madhya Pradesh, Uttar Pradesh and Chattisgarh</p>
         <p>National Hindi Monthly Magazine</p>
         </div>

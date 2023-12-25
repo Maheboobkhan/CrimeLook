@@ -3,7 +3,7 @@
 .headline-container{
     display: flex;
     justify-content: space-between;
-    height: 550px;
+    height: fit-content;
     padding: 20px 10px;
     margin-bottom: 40px;
     margin-top: 100px;
@@ -17,7 +17,7 @@
     width: 55%;
     /* box-shadow: 1px 1px 15px 5px #999; */
     /* background-color: #f9f9f9; */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     border-radius: 15px;
     /* background-color: #333; */
   }
@@ -29,7 +29,6 @@
     margin-top: 20px;
     padding-left: 25px;
     padding-bottom: 100px;
-    
   }
 
   .headline ol li{
@@ -91,6 +90,28 @@
     color: #666;
   }
 
+
+  /* .headline ol li:nth-child(odd){
+    animation: trans 5s infinite;
+    transition: 3s all ease-in-out;
+  }
+
+  .headline ol li:nth-child(even){
+    animation: transs 5s infinite;
+    transition: 3s all ease-in-out;
+  }
+
+  @keyframes trans{
+    100%{
+      transform: translateX(-100px);
+    }
+  }
+
+  @keyframes transs{
+    100%{
+      transform: translateX(100px);
+    }
+  } */
 
   /* advertisement */
   .advertisement-card {
@@ -164,17 +185,27 @@
   } */
 
   @media (max-width: 600px){
-    .headline{
-      width: 80%;
+    .headline-container{
+      flex-direction: column;
     }
-    .advertisement-card{
+    .headline{
+      width: 100%;
+    }
+    /* .advertisement-card{
       flex: 1;
+      margin: auto;
       height: 70%;
+      width: 100%;
       border: 1px solid red;
     }
 
     .advertisement-card img{
       height: 100%;
+      width: 80%;
+    } */
+
+    .advertisement-card{
+      margin: auto;
     }
   }
 

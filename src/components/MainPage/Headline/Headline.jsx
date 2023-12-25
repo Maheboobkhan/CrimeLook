@@ -20,7 +20,7 @@ const Headline = () => {
           <div></div>
         </div>
         <ol>
-          <li>
+          <li data-aos="flip-right">
             The image of departmental minister Smt. Yashodhara Raje Scindia is
             getting tarnished due to the arbitrariness of officials of Madhya
             Pradesh Sports and Youth Welfare Department.

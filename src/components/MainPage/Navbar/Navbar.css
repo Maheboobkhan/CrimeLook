@@ -397,17 +397,21 @@
     }
 
     .ribbon-text-1{
-      font-size: 13px;
-      width: 46%;
-      left: 62%;
+      font-size: 10px;
+      width: 58%;
+      left: 60%;
       padding-top: 12px;
+      padding-bottom: 12px;
+      /* border: 1px solid red; */
+      font-family: 'Montserrat', sans-serif;
     }
 
     .ribbon-text-2{
-      font-size: 13px;
-      width: 46%;
-      left: 62%;
+      font-size: 10px;
+      width: 58%;
+      left: 60%;
       padding-top: 5px;
+      font-family: 'Montserrat', sans-serif;
     }
 
     .navbar-title-1{

@@ -81,12 +81,12 @@ const Navbar = () => {
       </div>
       <div className={`navbar-list-container ${isActive ? 'active' : ''}`}>
         <ul className="navbar-list">
-          <Link style={{textDecoration: 'none'}} to='/'><li>Main Page</li></Link>
-          <Link style={{textDecoration: 'none'}} to='/aboutus'><li>About Us</li></Link>
-          <Link style={{textDecoration: 'none'}} to='/gallery'><li>Gallery</li></Link>
-          <Link style={{textDecoration: 'none'}} to='/contact'><li>Contact</li></Link>
-          <Link style={{textDecoration: 'none'}} to='/davp/rni'><li>DAVP/RNI</li></Link>
-          <Link style={{textDecoration: 'none'}} to='/advertising rate'><li>Advertising Rate</li></Link>        
+          <Link to='/' style={{textDecoration: 'none'}}><li>Main Page</li></Link>
+          <Link to='/about' style={{textDecoration: 'none'}}><li>About Us</li></Link>
+          <Link to='/gallery' style={{textDecoration: 'none'}}><li>Gallery</li></Link>
+          <Link to='/contact' style={{textDecoration: 'none'}}><li>Contact</li></Link>
+          <Link to='/davp/rni' style={{textDecoration: 'none'}}><li>DAVP/RNI</li></Link>
+          <Link to='/advertising rate' style={{textDecoration: 'none'}}><li>Advertising Rate</li></Link>        
         </ul>
         <Link style={{textDecoration: 'none'}} to='/log in'>
           <button className="login-button">

@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from '../MainPage/Navbar/Navbar'
+import Footer from '../MainPage/Footer/Footer'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div>
+        <Navbar />
+        <Footer />
+    </div>
   )
 }
 

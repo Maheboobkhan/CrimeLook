@@ -4,6 +4,7 @@ import "./App.css"
 import MainPage from './components/MainPage/MainPage';
 import MagazineGallery from './components/MagazineGallery/MagazineGallery';
 import AboutUs from './components/AboutUS/AboutUs';
+import Gallery from './components/Gallery/Gallery';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' element={<MainPage />} />
         <Route path='/magazines' element={<MagazineGallery />} />
         <Route path='/about' element={<AboutUs />} />
+        <Route path='/gallery' element={<Gallery />} />
       </Routes>
     </div>
   )

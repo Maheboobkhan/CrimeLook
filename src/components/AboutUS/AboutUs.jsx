@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../AboutUS/AboutUs.css";
+import "../AboutUS/about.css";
 import Navbar from "../MainPage/Navbar/Navbar";
 import Footer from "../MainPage/Footer/Footer";
 import AOS from 'aos';

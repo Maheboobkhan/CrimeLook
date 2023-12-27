@@ -12,7 +12,7 @@ const Magzine = () => {
         </div>
         <div className='magazine-cover' data-aos="fade-up-right">
           <img src={CoverMagazine} />
-          <Link to='/magazines' style={{textDecoration: 'none'}}><p>View All Magazine</p></Link>
+          <Link to='/magazines' style={{textDecoration: 'none'}}><p className='view-all-magazine'>View All Magazine</p></Link>
         </div>
     </div>
   )

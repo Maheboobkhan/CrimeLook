@@ -50,6 +50,7 @@ import React, { useState } from "react";
 import "../Navbar/Navbar.css";
 import { Link } from 'react-router-dom';
 import { FaSignInAlt, FaFacebookF, FaGooglePlusG, FaTwitter } from 'react-icons/fa';
+import logo from "../../../../public/logo.png"
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -71,7 +72,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-title-container">
         <div className="navbar-title-1"></div>
-        <h1>Crime Look</h1>
+        {/* <h1>Crime Look</h1> */}
+        <img src={logo} />
       </div>
       {/* Hamburger menu for mobile */}
       <div className="hamburger-menu" onClick={toggleSidebar}>

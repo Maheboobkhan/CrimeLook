@@ -51,12 +51,12 @@ import 'aos/dist/aos.css';
 
 const MagazineGallery = () => {
     useEffect(()=>{
-        AOS.init({duration: 1000})
+        AOS.init({duration: 1000, once: true})
     }, [])
   return (
     <div>
         <Navbar />
-    <div className='gallery-container' data-aos="zoom-in">
+    <div className='magazine-gallery-container' data-aos="zoom-in">
         <img src={Image0} alt='image' />
         <img src={Image1} alt='image' />
         <img src={Image2} alt='image' />

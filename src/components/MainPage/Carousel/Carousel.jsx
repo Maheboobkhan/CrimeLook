@@ -11,7 +11,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 export default function Carousel() {
   useEffect(()=>{
-    AOS.init({duration: 300})
+    AOS.init({duration: 300, once: true})
   }, [])
   return (
     <>

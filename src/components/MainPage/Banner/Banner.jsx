@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 const Banner = () => {
 
   useEffect(()=>{
-    AOS.init({duration: 300})
+    AOS.init({duration: 300, once: true})
   }, [])
 
   return (

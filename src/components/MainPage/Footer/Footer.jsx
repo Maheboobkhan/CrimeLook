@@ -1,15 +1,10 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import "../Footer/Footer.css";
 import { CiLinkedin, CiFacebook, CiTwitter } from "react-icons/ci";
-import AOS from "aos";
-import 'aos/dist/aos.css';
 
 const Footer = () => {
-  useEffect(()=>{
-    AOS.init({duration: 300})
-  }, [])
   return (
-    <div className="footer-main" data-aos="zoom-in">
+    <div className="footer-main">
       <div className="footer-container">
         <div className="footer-content">
           <ul>

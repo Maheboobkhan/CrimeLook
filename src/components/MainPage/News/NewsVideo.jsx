@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 function NewsVideo() {
   useEffect(()=>{
-    AOS.init({duration: 1000})
+    AOS.init({duration: 1000, once: true})
   }, [])
   const [isVideoVisible, setVideoVisible] = useState(false);
 

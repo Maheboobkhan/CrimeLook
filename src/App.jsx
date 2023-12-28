@@ -5,6 +5,7 @@ import MainPage from './components/MainPage/MainPage';
 import MagazineGallery from './components/MagazineGallery/MagazineGallery';
 import AboutUs from './components/AboutUS/AboutUs';
 import Gallery from './components/Gallery/Gallery';
+import ContactUS from './components/ContactUS/ContactUs';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='/magazines' element={<MagazineGallery />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/Contact' element={<ContactUS />} />
       </Routes>
     </div>
   )

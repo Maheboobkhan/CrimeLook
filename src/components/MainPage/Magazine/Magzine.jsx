@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../Magazine/Magazine.css";
 import {Link} from 'react-router-dom'
 import CoverMagazine from "../Magazine/cover.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Magzine = () => {
+  useEffect(()=>{
+    AOS.init({duration: 1000, once:true})
+  },[])
   return (
     <div className='magazine-container'>
         <div className="magzine-heading" data-aos="fade-up-left">

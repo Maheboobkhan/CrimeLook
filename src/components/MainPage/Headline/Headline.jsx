@@ -8,7 +8,7 @@ import { Scrollbar } from 'react-scrollbars-custom';
 
 const Headline = () => {
     useEffect(()=>{
-        AOS.init({duration: 1000})
+        AOS.init({duration: 1000, once: true})
     },[])
   return (
     <div className="headline-container" data-aos="fade-right"

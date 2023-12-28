@@ -328,23 +328,18 @@
     .crime-look-group{  
       width: 100%;
       margin: auto;
-      border: 1px solid red;
     }
 
     .crime-look-heading{
-      border: 1px solid green;
     }
 
     .crime-look-heading h5{
-      border: 3px solid green;
     }
 
     .crime-look-para{
-      border: 1px solid blue;
     }
 
     .crime-look-para p{
-      border: 3px solid orangered;
       text-wrap: wrap;
       margin-top: 100px;
     }
@@ -355,23 +350,19 @@
 
     .bureau-reporter{
       width: 100%;
-      border: 1px solid red;
     }
 
     .bureau-reporter-heading{
       width: 45%;
-      border: 1px solid red;
       margin-top: 5px;
     }
 
     .crime-look-heading-for-ex-style{
       width: 40%;
-      border: 5px solid brown;
     }
 
     .crime-look-para-for-ex-style{
       width: 60%;
-      border: 5px solid red;
     }
 
     .crime-look-para-for-ex-style p{
@@ -401,7 +392,6 @@
 
     .crime-look-heading-for-ex-style{
       width: 40%;
-      border: 5px solid brown;
     }
 
     .crime-look-heading-for-ex-style h5{
@@ -410,7 +400,6 @@
 
     .crime-look-para-for-ex-style{
       width: 60%;
-      border: 5px solid red;
     }
 
     .bottome-address{

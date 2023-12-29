@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import "../AdvertisementRate/AdvertisementRate.css";
 import Navbar from "../MainPage/Navbar/Navbar";
 import Footer from "../MainPage/Footer/Footer";
-import AdvertisementPageImage from "../AdvertisementRate/Advertisement.jpg"
+import AdvertisementPageImage from "../AdvertisementRate/advertisement.jpg"
 import AOS from 'aos';
 import "aos/dist/aos.css";
 

@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     transform: skew(-40deg);
-    background-color: #fbe122;
+    background-color: #161509;
     position: absolute;
     top: 0;
     left: 17%;
@@ -10,7 +10,7 @@
   }
 
   .davp_rni-heading{
-    background-color: #fbe122;
+    background-color: #161509;
     height: 80px;
     width: 60%;
     position: relative;
@@ -25,7 +25,7 @@
     left: 52%;
     transform: translate(-50%, -50%);
     z-index: 0;
-    color: #161509;
+    color: #fff;
     /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
     letter-spacing: 2px;

@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link to='/gallery' style={{textDecoration: 'none'}}><li>Gallery</li></Link>
           <Link to='/contact' style={{textDecoration: 'none'}}><li>Contact</li></Link>
           <Link to='/davp/rni' style={{textDecoration: 'none'}}><li>DAVP/RNI</li></Link>
-          <Link to='/advertising rate' style={{textDecoration: 'none'}}><li>Advertising Rate</li></Link>        
+          <Link to='/advertisement' style={{textDecoration: 'none'}}><li>Advertising Rate</li></Link>        
         </ul>
         <Link style={{textDecoration: 'none'}} to='/log in'>
           <button className="login-button">

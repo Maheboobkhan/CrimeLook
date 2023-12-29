@@ -26,30 +26,25 @@
     transform: translate(-50%, -50%);
     z-index: 0;
     color: #fff;
-    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
     letter-spacing: 2px;
-    /* border: 1px solid red; */
   }
 
-
-/* .davp_rni h1{
-    background-color: #fbe122;
-    padding: 15px 20px;
-    font-size: 40px;
-    font-family: "Montserrat", sans-serif;
-    margin: auto;
-    margin-top: 80px;
-    width: fit-content;
-} */
+  .davp-rni-image-container{
+    text-align: center;
+  }
 
 .davp_rni img{
-    width: 100%;
+    width: 90%;
+    border: 0.5px solid #161509;
     border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
 }
 
-.davp_rni-image2{
-    margin-bottom: 100px;
+.davp_rni-image2 img{
+    border: 1.5px solid #161509;
+    margin-bottom: 50px;
 }
 
 

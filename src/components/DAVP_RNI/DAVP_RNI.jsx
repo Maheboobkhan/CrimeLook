@@ -21,7 +21,9 @@ const DAVP_RNI = () => {
             <h1>RNI Letter Issued By Goverment Of India</h1>
             <div></div>
           </div>
+          <div className="davp-rni-image-container">
           <img src={image1} data-aos="fade-up-right" />
+          </div>
         </div>
 
         <div className="davp_rni">
@@ -30,7 +32,9 @@ const DAVP_RNI = () => {
             <h1>RNI Letter Issued By Goverment Of India</h1>
             <div></div>
           </div>
-          <img src={image2} className="davp_rni-image2" data-aos="fade-up-right" />
+          <div className="davp-rni-image-container davp_rni-image2">
+          <img src={image2} data-aos="fade-up-right" />
+          </div>
         </div>
       </div>
       <Footer />

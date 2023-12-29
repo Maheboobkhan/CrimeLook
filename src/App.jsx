@@ -6,6 +6,7 @@ import MagazineGallery from './components/MagazineGallery/MagazineGallery';
 import AboutUs from './components/AboutUS/AboutUs';
 import Gallery from './components/Gallery/Gallery';
 import ContactUS from './components/ContactUS/ContactUs';
+import DAVP_RNI from './components/DAVP_RNI/DAVP_RNI';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/about' element={<AboutUs />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/Contact' element={<ContactUS />} />
+        <Route path='/davp/rni' element={<DAVP_RNI />} />
       </Routes>
     </div>
   )

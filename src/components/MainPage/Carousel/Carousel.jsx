@@ -3,11 +3,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import SwiperCore from 'swiper'
 import "../Carousel/Carousel.css"
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 
 export default function Carousel() {
   useEffect(()=>{

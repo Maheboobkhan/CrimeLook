@@ -23,18 +23,8 @@ function NewsVideo() {
           <div></div>
         </div>
     <div className="youtube-video" onClick={toggleVideo}>
-      {/* {!isVideoVisible && (
-        <>
-          <div className="play-button"></div>
-          <img
-            src={Thumbnail}
-            alt="Video Thumbnail"
-            className="video-thumbnail"
-          />
-        </>
-      )} */}
 
-      (
+      {
         <iframe data-aos="fade-up-left"
           title="Embedded YouTube Video"
           src={embedUrl}
@@ -42,7 +32,7 @@ function NewsVideo() {
           allowFullScreen
           className="video-iframe"
         ></iframe>
-      )
+      }
     </div>
     </div>
   );

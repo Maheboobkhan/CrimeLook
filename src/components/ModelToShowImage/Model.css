@@ -31,14 +31,14 @@
     z-index: 10;
     padding: 2px 8px;
     border-radius: 100%;
-    color: black;
+    color: #fff;
     top: 1%;
     right: 1%;
     background-color: gray;
 }
 
 .close-btn:hover{
-    background-color: gray;
+    background-color: black;
 }
 
 .modal-image {
@@ -57,6 +57,12 @@
     margin-left: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    color: #fff;
+    background-color: gray;
+}
+
+.zoom-controls button:hover{
+    background-color: black;
 }
 
 .model-container{

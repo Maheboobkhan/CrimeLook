@@ -93,6 +93,14 @@
     color: #fbe122;
 }
 
+.socialmedia-icon a{
+    color: white;
+}
+
+.socialmedia-icon a:hover{
+    color: #fbe122;
+}
+
 @media (max-width: 660px){
     .footer-content{
         width: 50%;
@@ -119,4 +127,11 @@
         width: 100%;
         text-align: center;
     }
+}
+
+
+@media (min-width:1200px) and (max-width:2000px){
+    .socialmedia-icon{
+        width: 50%;
+    }   
 }

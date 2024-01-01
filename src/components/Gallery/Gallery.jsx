@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import "../Gallery/Gallery.css";
 import Navbar from '../MainPage/Navbar/Navbar';
 import Footer from '../MainPage/Footer/Footer';
+import Modal from '../ModelToShowImage/Model';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
         import Image0 from "../Gallery/GalleryImage/1.jpg";
@@ -15,24 +16,26 @@ import 'aos/dist/aos.css';
         import Image8 from "../Gallery/GalleryImage/9.jpg";
 
 const MagazineGallery = () => {
+  const images = [Image0, Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8]
+  const [selectedImage, setSelectedImage] = useState(null);
     useEffect(()=>{
         AOS.init({duration: 1000, once:true})
     }, [])
+
+
+    const closeModal = () => {
+      setSelectedImage(null);
+  };
   return (
     <div>
         <Navbar />
     <div className='gallery-container' data-aos="zoom-in">
-        <img src={Image0} alt='image' />
-        <img src={Image1} alt='image' />
-        <img src={Image2} alt='image' />
-        <img src={Image3} alt='image' />
-        <img src={Image4} alt='image' />
-        <img src={Image5} alt='image' />
-        <img src={Image6} alt='image' />
-        <img src={Image7} alt='image' />
-        <img src={Image8} alt='image' />
+      {images.map((ele)=>{
+        return <img src={ele} alt='image' onClick={() => setSelectedImage(ele)} />
+      })}
     </div>
     <Footer />
+    {selectedImage && <Modal image={selectedImage} closeModal={closeModal} />}
     </div>
   )
 }

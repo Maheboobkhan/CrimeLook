@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Login/Login.css';
 import Navbar from "../MainPage/Navbar/Navbar";
 import Footer from "../MainPage/Footer/Footer";
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Login = () => {
+    useEffect(()=>{
+        AOS.init({duration:1000, once:true})
+    },[])
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -23,7 +28,7 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-            <div className="login-container">
+            <div className="login-container" data-aos="zoom-in">
                 <h2>Login</h2>
                 <div className="underline"></div>
                 <form onSubmit={handleSubmit}>
@@ -41,22 +46,24 @@ const Login = () => {
                             required
                         />
                     </div>
-                    <div className="input-group">
+                    <div className="input-group password-input-group">
                         <label htmlFor="password">
                             <FaLock className='fa-lock' />
                             Password:
                         </label>
-                        <input
-                            type={showPassword ? "text" : "password"}
-                            id="password"
-                            placeholder="Enter your password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
-                        <span onClick={() => setShowPassword(!showPassword)}>
-                            {showPassword ? <i className="fas fa-eye-slash"></i> : <i className="fas fa-eye"></i>}
-                        </span>
+                        <div className="password-input-container">
+                            <input
+                                type={showPassword ? "text" : "password"}
+                                id="password"
+                                placeholder="Enter your password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                            <span onClick={() => setShowPassword(!showPassword)}>
+                                {showPassword ? <FaEyeSlash className="eye-icon" /> : <FaEye className="eye-icon" />}
+                            </span>
+                        </div>
                     </div>
                     <p className="forgot-password">Forgot password?</p>
                     <div className="button-group">

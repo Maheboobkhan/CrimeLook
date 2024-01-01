@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
+import Modal from '../ModelToShowImage/Model';
 import "../MagazineGallery/MagazineGallery.css";
 import Navbar from '../MainPage/Navbar/Navbar';
 import Footer from '../MainPage/Footer/Footer';
@@ -50,59 +51,31 @@ import 'aos/dist/aos.css';
         import Image43 from "../MagazineGallery/GalleryImage/44.png";
 
 const MagazineGallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
     useEffect(()=>{
         AOS.init({duration: 1000, once: true})
     }, [])
+
+    const closeModal = () => {
+      setSelectedImage(null);
+  };
+
+    const images = [
+      Image0, Image1, Image2, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image13,Image14,Image15,Image16,Image17,Image18,Image19,Image20,Image21,Image22,Image23,Image24,Image25,Image26,Image27,Image28,Image29,Image30,Image31,Image32,Image33,Image34,Image35,Image36,Image37,Image38,Image39,Image40,Image41,Image42,Image43,
+  ];
+
+  console.log("img: "+images);
+
   return (
     <div>
         <Navbar />
     <div className='magazine-gallery-container' data-aos="zoom-in">
-        <img src={Image0} alt='image' />
-        <img src={Image1} alt='image' />
-        <img src={Image2} alt='image' />
-        <img src={Image3} alt='image' />
-        <img src={Image4} alt='image' />
-        <img src={Image5} alt='image' />
-        <img src={Image6} alt='image' />
-        <img src={Image7} alt='image' />
-        <img src={Image8} alt='image' />
-        <img src={Image9} alt='image' />
-        <img src={Image10} alt='image' />
-        <img src={Image11} alt='image' />
-        <img src={Image12} alt='image' />
-        <img src={Image13} alt='image' />
-        <img src={Image14} alt='image' />
-        <img src={Image15} alt='image' />
-        <img src={Image16} alt='image' />
-        <img src={Image17} alt='image' />
-        <img src={Image18} alt='image' />
-        <img src={Image19} alt='image' />
-        <img src={Image20} alt='image' />
-        <img src={Image21} alt='image' />
-        <img src={Image22} alt='image' />
-        <img src={Image23} alt='image' />
-        <img src={Image24} alt='image' />
-        <img src={Image25} alt='image' />
-        <img src={Image26} alt='image' />
-        <img src={Image27} alt='image' />
-        <img src={Image28} alt='image' />
-        <img src={Image29} alt='image' />
-        <img src={Image30} alt='image' />
-        <img src={Image31} alt='image' />
-        <img src={Image32} alt='image' />
-        <img src={Image33} alt='image' />
-        <img src={Image34} alt='image' />
-        <img src={Image35} alt='image' />
-        <img src={Image36} alt='image' />
-        <img src={Image37} alt='image' />
-        <img src={Image38} alt='image' />
-        <img src={Image39} alt='image' />
-        <img src={Image40} alt='image' />
-        <img src={Image41} alt='image' />
-        <img src={Image42} alt='image' />
-        <img src={Image43} alt='image' />
+      {images.map((ele)=>{
+        return <img src={ele} alt='image' onClick={() => setSelectedImage(ele)} />
+      })}
     </div>
     <Footer />
+    {selectedImage && <Modal image={selectedImage} closeModal={closeModal} />}
     </div>
   )
 }

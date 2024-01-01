@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Footer/Footer.css";
-import { CiLinkedin, CiFacebook, CiTwitter } from "react-icons/ci";
+import { CiLinkedin, CiFacebook, } from "react-icons/ci";
+import { PiGoogleLogoLight } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -9,48 +10,48 @@ const Footer = () => {
         <div className="footer-content">
           <ul>
             <span>Support</span>
-            <a href="https://crimelook.in/">
-              <li>crime look</li>
+            <a href="https://crimelook.in/" target='_blank'>
+              <li>Crime look</li>
             </a>
-            <a>
+            <a href='https://springstrategies.in/' target='_blank'>
               <li>Spring S Technology</li>
             </a>
             <a>
-              <li>centenarian</li>
+              <li>Centenarian</li>
             </a>
           </ul>
         </div>
         <div className="footer-content important-link">
           <ul>
-            <span>important links</span>
-            <a>
-              <li>till today</li>
+            <span>Important links</span>
+            <a href='https://www.aajtak.in/' target='_blank'>
+              <li>Aaj Tak</li>
             </a>
-            <a>
-              <li>daily newspaper</li>
+            <a href='https://www.bhaskar.com/' target='_blank'>
+              <li>Dainik Bhaskar</li>
             </a>
-            <a>
-              <li>crime look</li>
+            <a href='https://crimelook.in' target='_blank'>
+              <li>Crime look</li>
             </a>
           </ul>
         </div>
         <div className="footer-content socialmedia">
           <ul>
-            <span>social media</span>
+            <span>Social media</span>
             <div className="socialmedia-icon">
               <a href="">
                 <li>
-                  <CiFacebook className='footer-icons' size={35} />
+                  <a href='https://www.facebook.com/SpringSTechnologies/' target='_blank'><CiFacebook className='footer-icons' size={35} /></a>
                 </li>
               </a>
               <a>
                 <li>
-                  <CiLinkedin className='footer-icons' size={35} />
+                  <a href='https://www.linkedin.com/in/springstech/' target='_blank'><CiLinkedin className='footer-icons' size={35} /></a>
                 </li>
               </a>
               <a>
                 <li>
-                  <CiTwitter className='footer-icons' size={35} />
+                <a href='https://www.springstrategies.in/' target='_blank'><PiGoogleLogoLight className='footer-icons' size={35} /></a>
                 </li>
               </a>
             </div>
@@ -74,7 +75,7 @@ const Footer = () => {
         </div>
         <div>
           <span>Designed & Maintained by</span>
-          <a href="https://springstrategies.in/public_html/" target="_blank">
+          <a href="https://springstrategies.in" target="_blank">
             SPRING S TECHNOLOGIES | ISO 9001:2008
           </a>
         </div>

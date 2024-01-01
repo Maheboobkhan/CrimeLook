@@ -46,6 +46,7 @@
     width: 300px;
     box-shadow: 0.5px 0.5px 20px 5px #201f1f;
     transition: 0.3s all ease-in-out;
+    cursor: pointer;
   }
 
   .magazine-cover img:hover{

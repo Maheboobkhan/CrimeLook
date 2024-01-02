@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -25,17 +25,26 @@ import image15 from "../Carousel/CarouselImage/15.jpg"
 import image16 from "../Carousel/CarouselImage/16.jpg"
 import image17 from "../Carousel/CarouselImage/17.jpg"
 import image18 from "../Carousel/CarouselImage/18.jpg"
+import image19 from "../Carousel/CarouselImage/19.png"
+import image20 from "../Carousel/CarouselImage/20.png"
+import image21 from "../Carousel/CarouselImage/21.jpg"
+import Modal from "../../ModelToShowImage/Model";
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 
 export default function Carousel() {
+  const [selectedImage, setSelectedImage] = useState(null);
   useEffect(()=>{
     AOS.init({duration: 300, once: true})
   }, [])
 
+  const closeModal = () => {
+    setSelectedImage(null);
+};
+
   const images = [
-    image10,image11,image12,image13,image14,image15,image16,image17,image18, image1,image2,image3,image4,image5,image6,image7,image8,image9
+    image19, image20, image10,image11,image12,image13,image14,image15,image16,image17,image18, image21, image1,image2,image3,image4,image5,image6,image7,image8,image9
   ]
 
   return (
@@ -64,10 +73,11 @@ export default function Carousel() {
       >
         {images.map((ele)=>{
           return <SwiperSlide>
-          <img data-aos='flip-left' src={ele} alt="Nature 1" />
+          <img data-aos='flip-left' src={ele} alt="crime books" onClick={() => setSelectedImage(ele)} />
         </SwiperSlide>  
         })}
       </Swiper>
+      {selectedImage && <Modal image={selectedImage} closeModal={closeModal} />}
     </>
   );
 }

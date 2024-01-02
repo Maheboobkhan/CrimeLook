@@ -7,6 +7,24 @@ import SwiperCore from 'swiper'
 import "../Carousel/Carousel.css"
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import image1 from "../Carousel/CarouselImage/1.jpg"
+import image2 from "../Carousel/CarouselImage/2.jpg"
+import image3 from "../Carousel/CarouselImage/3.jpg"
+import image4 from "../Carousel/CarouselImage/4.jpg"
+import image5 from "../Carousel/CarouselImage/5.jpg"
+import image6 from "../Carousel/CarouselImage/6.jpg"
+import image7 from "../Carousel/CarouselImage/7.jpg"
+import image8 from "../Carousel/CarouselImage/8.jpg"
+import image9 from "../Carousel/CarouselImage/9.jpg"
+import image10 from "../Carousel/CarouselImage/10.jpg"
+import image11 from "../Carousel/CarouselImage/11.jpg"
+import image12 from "../Carousel/CarouselImage/12.jpg"
+import image13 from "../Carousel/CarouselImage/13.jpg"
+import image14 from "../Carousel/CarouselImage/14.jpg"
+import image15 from "../Carousel/CarouselImage/15.jpg"
+import image16 from "../Carousel/CarouselImage/16.jpg"
+import image17 from "../Carousel/CarouselImage/17.jpg"
+import image18 from "../Carousel/CarouselImage/18.jpg"
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
@@ -15,6 +33,11 @@ export default function Carousel() {
   useEffect(()=>{
     AOS.init({duration: 300, once: true})
   }, [])
+
+  const images = [
+    image10,image11,image12,image13,image14,image15,image16,image17,image18, image1,image2,image3,image4,image5,image6,image7,image8,image9
+  ]
+
   return (
     <>
       <Swiper data-aos="zoom-in"
@@ -39,33 +62,11 @@ export default function Carousel() {
           disableOnInteraction: false  // Autoplay will not be disabled after user interactions
         }}
       >
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Nature 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature 2" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Nature 3" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Nature 4" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Nature 5" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Nature 6" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Nature 7" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Nature 8" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img data-aos='flip-left' src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Nature 9" />
-        </SwiperSlide>
+        {images.map((ele)=>{
+          return <SwiperSlide>
+          <img data-aos='flip-left' src={ele} alt="Nature 1" />
+        </SwiperSlide>  
+        })}
       </Swiper>
     </>
   );
